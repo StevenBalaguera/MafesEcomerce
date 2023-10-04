@@ -1,16 +1,10 @@
 const productoDOM = document.querySelector(".productos__center")
-const carritoDOM = document.querySelector(".carrito")
-const carritoCenter = document.querySelector(".carrito__center")
-const openCarrito = document.querySelector(".carrito__icon")
-const closeCarrito = document.querySelector(".close__carrito")
-const overlay = document.querySelector(".carrito__overlay")
-const carritoTotal = document.querySelector(".carrito__total")
-const clearCarritoBtn = document.querySelector(".clear__carrito")
 const itemTotales =document.querySelector(".item__total")
 const detalles = document.getElementById('detalles')
 
 let carrito = [];
 let buttonDOM = [];
+let productos  = [];
 
 class UI {
 
@@ -47,12 +41,6 @@ class UI {
 						<p class="description">
 							<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates consequuntur in assumenda odit hic, aut cupiditate dolorem aspernatur! Quibusdam iusto magnam vero maxime quisquam voluptatibus minima aliquam molestias, iure ratione commodi, reiciendis quasi.</span>
 						</p>
-
-						<div class="bottom">
-							<div class="btn__group">
-								<button class="btn addToCart" data-id=${producto.id}>Añadir carrito</button>
-							</div>
-						</div>
 				</div>
 			</article>
 			`
@@ -91,7 +79,6 @@ class UI {
           </div>
           <div class="bottom">
             <div class="btn__group">
-              <button class="btn addToCart" data-id=${producto.id}>Añadir carrito</button>
               <a href="producto-detalles.html?id=${producto.id}" class="btn view">Vista</a>
             </div>
           </div>
@@ -132,7 +119,6 @@ class Productos {
 }
 
 let category = "";
-let productos  = [];
 
 function categoryValue(){
 	const ui = new UI();
