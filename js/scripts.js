@@ -36,10 +36,10 @@ class UI {
 					</div>
 						<p class="price"><b>Precio: </b> $${producto.price}</p>
 						<p class="description">
-							<b>Descripcion: </b> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae ad ex sint expedita perspiciatis odit eligendi! Et quia ex aperiam dolorum sunt omnis maiores. Repudiandae delectus iste exercitationem vel?</span>
+							<b>Descripcion: </b> <span> ${producto.description_product}</span>
 						</p>
 						<p class="description">
-							<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates consequuntur in assumenda odit hic, aut cupiditate dolorem aspernatur! Quibusdam iusto magnam vero maxime quisquam voluptatibus minima aliquam molestias, iure ratione commodi, reiciendis quasi.</span>
+							<span>${producto.description_product}</span>
 						</p>
 				</div>
 			</article>
